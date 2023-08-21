@@ -25,10 +25,9 @@ jobs:
       - name: install
         shell: bash
         run: npm ci
-      - name: Checkout
+      - name: run linter
         shell: bash
         run: npm run lint
-        # run: npm run lint:fix
   unit-test:
     runs-on: ubuntu-latest
     steps:
